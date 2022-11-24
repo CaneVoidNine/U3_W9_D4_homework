@@ -1,9 +1,5 @@
-import { Card } from "react-bootstrap";
 import React from "react";
-import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import books from "./fantasy.json";
-import CommentArea from "./CommentArea";
 import SingleBook from "./SingleBook";
 
 class BookList extends React.Component {
@@ -15,7 +11,7 @@ class BookList extends React.Component {
       <>
         <Row className="row g-4" xs={1} md={4}>
           {this.props.books.map((book) => (
-           <SingleBook book={book}></SingleBook>
+            <SingleBook book={book}></SingleBook>
           ))}
         </Row>
       </>
@@ -24,4 +20,3 @@ class BookList extends React.Component {
 }
 
 export default BookList;
-
